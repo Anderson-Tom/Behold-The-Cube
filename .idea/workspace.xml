@@ -2,42 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11003e3f-8e59-432e-b1d5-ab24ffba1e42" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_3_0_M0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_3_0_M0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_3_0_M0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_3_0_M0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hw-02/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hw-02/src/main/java/accounts/AccountService.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-server/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-server/target/classes/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-server/target/classes/servlets/AllRequestsServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-server/target/classes/templater/PageGenerator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-server/web-server.iml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/.idea/compiler.xml" afterPath="$PROJECT_DIR$/hw-01/.idea/compiler.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/hw-01/.idea/copyright/profiles_settings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/.idea/encodings.xml" afterPath="$PROJECT_DIR$/hw-01/.idea/encodings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_3_0_M1.xml" afterPath="$PROJECT_DIR$/hw-01/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_3_0_M1.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_3_0_M1.xml" afterPath="$PROJECT_DIR$/hw-01/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_3_0_M1.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_3_0_M0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_3_0_M0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_3_0_M1.xml" afterPath="$PROJECT_DIR$/hw-01/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_3_0_M1.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_3_0_M0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_3_0_M0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_3_0_M1.xml" afterPath="$PROJECT_DIR$/hw-01/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_3_0_M1.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/.idea/libraries/Maven__org_eclipse_jetty_jetty_webapp_9_3_0_M0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_webapp_9_3_0_M0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_3_0_M0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_3_0_M0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/.idea/libraries/Maven__org_freemarker_freemarker_2_3_20.xml" afterPath="$PROJECT_DIR$/hw-01/.idea/libraries/Maven__org_freemarker_freemarker_2_3_20.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/.idea/misc.xml" afterPath="$PROJECT_DIR$/hw-01/.idea/misc.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/.idea/modules.xml" afterPath="$PROJECT_DIR$/hw-01/.idea/modules.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/hw-01/.idea/uiDesigner.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/.idea/workspace.xml" afterPath="$PROJECT_DIR$/hw-01/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/pom.xml" afterPath="$PROJECT_DIR$/hw-01/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/src/main/java/main/Main.java" afterPath="$PROJECT_DIR$/hw-01/src/main/java/main/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/src/main/java/servlets/AllRequestsServlet.java" afterPath="$PROJECT_DIR$/hw-01/src/main/java/servlets/AllRequestsServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/src/main/java/servlets/ServletTask1.java" afterPath="$PROJECT_DIR$/hw-01/src/main/java/servlets/ServletTask1.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/src/main/java/templater/PageGenerator.java" afterPath="$PROJECT_DIR$/hw-01/src/main/java/templater/PageGenerator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/templates/page.html" afterPath="$PROJECT_DIR$/hw-01/templates/page.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-server/templates/test.html" afterPath="$PROJECT_DIR$/hw-01/templates/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hw-02/src/main/java/servlets/SessionServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hw-02/src/main/java/servlets/UserServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hw-02/src/main/java/accounts/UserProfile.java" afterPath="$PROJECT_DIR$/hw-02/src/main/java/accounts/UserProfile.java" />
     </list>
     <ignored path="web-servers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,37 +22,24 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="web-servers" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hw-02/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.375">
-              <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hw-02/public_html/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375">
-              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AccountService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hw-02/src/main/java/accounts/AccountService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#400#401#0" expanded="true" />
@@ -100,12 +55,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserProfile.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hw-02/src/main/java/accounts/UserProfile.java">
+      <file leaf-file-name="SessionServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw-02/src/main/java/servlets/SessionServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="82" column="54" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#555#556#0" expanded="true" />
+                <element signature="e#607#608#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hw-02/src/main/java/servlets/UserServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.22821577">
               <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserProfile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw-02/src/main/java/accounts/UserProfile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="e#544#545#0" expanded="true" />
+                <element signature="e#572#573#0" expanded="true" />
+                <element signature="e#603#604#0" expanded="true" />
+                <element signature="e#630#631#0" expanded="true" />
+                <element signature="e#662#663#0" expanded="true" />
+                <element signature="e#690#691#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,6 +122,9 @@
         <option value="$PROJECT_DIR$/hw-02/public_html/index.html" />
         <option value="$PROJECT_DIR$/hw-02/src/main/java/accounts/AccountService.java" />
         <option value="$PROJECT_DIR$/hw-02/src/main/java/accounts/UserProfile.java" />
+        <option value="$PROJECT_DIR$/hw-02/src/main/java/servlets/SessionSevlet.java" />
+        <option value="$PROJECT_DIR$/hw-02/src/main/java/servlets/SessionServlet.java" />
+        <option value="$PROJECT_DIR$/hw-02/src/main/java/servlets/UserServlet.java" />
       </list>
     </option>
   </component>
@@ -216,6 +205,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="hw-02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-servers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hw-02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servlets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -760,12 +775,12 @@
       <created>1450557724393</created>
       <option name="number" value="Default" />
       <updated>1450557724393</updated>
-      <workItem from="1450557725748" duration="1259000" />
+      <workItem from="1450557725748" duration="3760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1259000" />
+    <option name="totallyTimeSpent" value="3760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -776,24 +791,24 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19789983" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19789983" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -810,7 +825,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hw-02/public_html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375">
+        <state vertical-scroll-proportion="0.32188842">
           <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
           <folding />
         </state>
@@ -818,7 +833,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hw-02/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.375">
+        <state vertical-scroll-proportion="0.66523606">
           <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
           <folding />
         </state>
@@ -827,7 +842,7 @@
     <entry file="file://$PROJECT_DIR$/hw-02/src/main/java/accounts/AccountService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#400#401#0" expanded="true" />
@@ -843,6 +858,33 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hw-02/src/main/java/accounts/UserProfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#630#631#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw-02/src/main/java/servlets/SessionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="54" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw-02/src/main/java/servlets/UserServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22821577">
           <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
