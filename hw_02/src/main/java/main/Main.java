@@ -30,8 +30,8 @@ public class Main {
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
 //        context.addServlet(new ServletHolder(new UserServlet()), "/users");
 //        context.addServlet(new ServletHolder(new SessionServlet()), "/sessions");
-        context.addServlet(new ServletHolder(new SignInServlet()), "/api/signin");
-        context.addServlet(new ServletHolder(new SignUpServlet()), "/api/signup");
+        context.addServlet(new ServletHolder(new SignInServlet()), "/signin");
+        context.addServlet(new ServletHolder(new SignUpServlet()), "/signup");
         System.out.println("Server started");
 
         Resource theBaseResource = null;
