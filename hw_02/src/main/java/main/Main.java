@@ -1,7 +1,6 @@
 package main;
 
-import accounts.AccountService;
-import accounts.UserProfile;
+
 import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.handler.HandlerList;
@@ -9,10 +8,8 @@ import org.eclipse.jetty.server.handler.ResourceHandler;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 import org.eclipse.jetty.util.resource.Resource;
-import servlets.SessionServlet;
 import servlets.SignInServlet;
 import servlets.SignUpServlet;
-import servlets.UserServlet;
 
 import java.net.MalformedURLException;
 
