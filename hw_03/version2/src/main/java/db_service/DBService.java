@@ -30,9 +30,13 @@ public class DBService {
     private static final String user = "ivan";
     private static final String pass = "qwerty";
 
+    private static class LazyHolder {
+        private static final DBService INSTANCE = new DBService();
+    }
+
     private SessionFactory sessionFactory;
 
-    public DBService() {
+    private DBService() {
         Configuration configuration = getConfiguration(dialect, driver, url, user, pass);
         sessionFactory = createSessionFactory(configuration);
     }
@@ -52,6 +56,9 @@ public class DBService {
 //        return configuration;
 //    }
 
+    public static DBService getInstance() {
+        return LazyHolder.INSTANCE;
+    }
 
     private Configuration getConfiguration(String dialect, String driver, String url, String user, String pass) {
         Configuration configuration = new Configuration();
@@ -67,11 +74,23 @@ public class DBService {
 
     }
 
-    public UserDataSet getUser(long id) throws DBException {
+    public UserDataSet getUserById(long id) throws DBException {
         try {
             Session session = sessionFactory.openSession();
             UsersDAO dao = new UsersDAO(session);
-            UserDataSet dataSet = dao.get(id);
+            UserDataSet dataSet = dao.getById(id);
+            session.close();
+            return dataSet;
+        } catch (HibernateException e) {
+            throw new DBException(e);
+        }
+    }
+
+    public UserDataSet getUserByName(String name) throws DBException {
+        try {
+            Session session = sessionFactory.openSession();
+            UsersDAO dao = new UsersDAO(session);
+            UserDataSet dataSet = dao.getByName(name);
             session.close();
             return dataSet;
         } catch (HibernateException e) {

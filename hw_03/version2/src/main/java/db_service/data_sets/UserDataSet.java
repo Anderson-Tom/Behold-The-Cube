@@ -15,12 +15,11 @@ import java.io.Serializable;
 @Table(name = "users")
 public class UserDataSet implements Serializable { // Serializable is must have for Hibernate
     private static final long serialVersionUID = -5706689714326132798L;
-
-    @Id
+    
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-
+    @Id
     @Column(name = "name", unique = true, updatable = false)
     private String name;
 
