@@ -11,6 +11,7 @@ import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 import org.eclipse.jetty.util.resource.Resource;
 import servlets.SignInServlet;
+import servlets.SignUpServlet;
 
 import java.net.MalformedURLException;
 
@@ -40,6 +41,7 @@ public class Main {
 
         ServletContextHandler contextHandler = new ServletContextHandler(ServletContextHandler.SESSIONS);
         contextHandler.addServlet(new ServletHolder(new SignInServlet()), "/signin");
+        contextHandler.addServlet(new ServletHolder(new SignUpServlet()), "/signup");
         Resource theBaseResource = null;
         try{
             theBaseResource = Resource.newResource( "src/resources");

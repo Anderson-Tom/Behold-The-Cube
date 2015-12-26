@@ -35,6 +35,8 @@ public class UsersDAO {
     }
 
     public long insertUser(String name, String pass) throws HibernateException {
-        return (Long) session.save(new UserDataSet(name, pass));
+        String login = (String)session.save(new UserDataSet(name, pass));
+        long id = getUserId(login);
+        return id;
     }
 }
