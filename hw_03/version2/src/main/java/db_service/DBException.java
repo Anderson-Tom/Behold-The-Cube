@@ -1,7 +1,5 @@
 package db_service;
 
-import java.sql.SQLException;
-
 /**
  * @author IvanLis
  * @version 1.0

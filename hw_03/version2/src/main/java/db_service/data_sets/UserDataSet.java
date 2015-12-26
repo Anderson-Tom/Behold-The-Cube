@@ -1,5 +1,8 @@
 package db_service.data_sets;
 
+import javax.persistence.*;
+import java.io.Serializable;
+
 /**
  * @author IvanLis
  * @version 1.0
@@ -8,6 +11,43 @@ package db_service.data_sets;
  * version2
  */
 
+@Entity
+@Table(name = "users")
+public class UserDataSet implements Serializable { // Serializable is must have for Hibernate
+    private static final long serialVersionUID = -5706689714326132798L;
 
-public class UserDataSet {
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+
+    @Column(name = "name", unique = true, updatable = false)
+    private String name;
+
+    @SuppressWarnings("UnusedDeclaration")
+    public UserDataSet() {
+    }
+
+    @SuppressWarnings("UnusedDeclaration")
+    public UserDataSet(String name) {
+        this.name = name;
+    }
+
+    @SuppressWarnings("UnusedDeclaration")
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    @Override
+    public String toString() {
+        return "UserDataSet { Id: " + id + ", Name: " + name + "}";
+    }
 }
