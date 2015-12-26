@@ -24,14 +24,20 @@ public class UserDataSet implements Serializable { // Serializable is must have 
     @Column(name = "name", unique = true, updatable = false)
     private String name;
 
+    @Column(name = "pass", updatable = false)
+    private String pass;
+
     @SuppressWarnings("UnusedDeclaration")
     public UserDataSet() {
     }
 
     @SuppressWarnings("UnusedDeclaration")
-    public UserDataSet(String name) {
+    public UserDataSet(String name, String pass) {
         this.name = name;
+        this.pass = pass;
     }
+
+
 
     @SuppressWarnings("UnusedDeclaration")
     public String getName() {
@@ -42,12 +48,21 @@ public class UserDataSet implements Serializable { // Serializable is must have 
         this.name = name;
     }
 
+
+    public String getPass() {
+        return pass;
+    }
+
+    public void setPass(String pass) {
+        this.pass = pass;
+    }
+
     public long getId() {
         return id;
     }
 
     @Override
     public String toString() {
-        return "UserDataSet { Id: " + id + ", Name: " + name + "}";
+        return "UserDataSet { Id: " + id + ", Name: " + name + ", Pass: " + pass+ " }";
     }
 }
