@@ -6,6 +6,7 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
 
+import java.math.BigInteger;
 import java.util.List;
 
 /**
@@ -28,7 +29,11 @@ public class UsersDAO {
     }
 
     public UserDataSet getByName(String name) throws HibernateException {
-        return (UserDataSet) session.createSQLQuery("SELECT login FROM users WHERE login ='" + name +"'").uniqueResult();
+        BigInteger bigInt =  (BigInteger) session.createSQLQuery("SELECT id FROM users WHERE login ='" + name +"'").uniqueResult();
+        if (bigInt == null){
+            return null;
+        }
+        return getById(bigInt.longValue());
     }
 
 
