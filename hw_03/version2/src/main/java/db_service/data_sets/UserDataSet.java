@@ -16,7 +16,7 @@ import java.io.Serializable;
 public class UserDataSet implements Serializable { // Serializable is must have for Hibernate
     private static final long serialVersionUID = -5706689714326132798L;
 
-    @Column(name = "id")
+    @Column(name = "id", unique = true)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     @Id
@@ -35,7 +35,6 @@ public class UserDataSet implements Serializable { // Serializable is must have 
         this.name = name;
         this.pass = pass;
     }
-
 
 
     @SuppressWarnings("UnusedDeclaration")
@@ -62,6 +61,6 @@ public class UserDataSet implements Serializable { // Serializable is must have 
 
     @Override
     public String toString() {
-        return "UserDataSet { Id: " + id + ", Name: " + name + ", Pass: " + pass+ " }";
+        return "UserDataSet { Id: " + id + ", Name: " + name + ", Pass: " + pass + " }";
     }
 }

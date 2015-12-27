@@ -112,7 +112,7 @@ public class DBService {
         }
     }
 
-    public void printConnectInfo () {
+    public void printConnectInfo() {
         try {
             SessionFactoryImpl session = (SessionFactoryImpl) sessionFactory;
             Connection connection = session.getConnectionProvider().getConnection();
@@ -125,7 +125,7 @@ public class DBService {
         }
     }
 
-    private static SessionFactory createSessionFactory (Configuration configuration) {
+    private static SessionFactory createSessionFactory(Configuration configuration) {
         StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder();
         builder.applySettings(configuration.getProperties());
         ServiceRegistry serviceRegistry = builder.build();

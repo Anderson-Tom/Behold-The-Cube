@@ -2,7 +2,6 @@ package servlets;
 
 import db_service.DBException;
 import db_service.DBService;
-import db_service.dao.UsersDAO;
 import db_service.data_sets.UserDataSet;
 
 import javax.servlet.ServletException;
@@ -29,13 +28,12 @@ public class SignInServlet extends HttpServlet {
 
         try {
             UserDataSet userSet = DBService.getInstance().getUserByName(login);
-            System.out.println("Pass in db:"  + userSet.getPass());
-            System.out.println("Pass in the form:"  + pass);
+            System.out.println("Pass in db:" + userSet.getPass());
+            System.out.println("Pass in the form:" + pass);
             if (userSet.getPass().equals(pass)) {
                 resp.setStatus(HttpServletResponse.SC_OK);
                 resp.getWriter().println("Authorized");
-            }
-            else {
+            } else {
                 resp.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
                 resp.getWriter().println("Unauthorized");
             }
