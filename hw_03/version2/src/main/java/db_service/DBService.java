@@ -13,6 +13,7 @@ import org.hibernate.service.ServiceRegistry;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.List;
 
 /**
  * @author IvanLis
@@ -98,15 +99,27 @@ public class DBService {
         }
     }
 
-    public long addUser(String name, String pass) throws DBException {
+    public List<UserDataSet> getAllUsers() throws DBException {
+        try {
+            Session session = sessionFactory.openSession();
+            UsersDAO dao = new UsersDAO(session);
+            List<UserDataSet> users = dao.listAll();
+            session.close();
+            return users;
+        } catch (HibernateException e){
+            throw new DBException(e);
+        }
+
+    }
+
+    public void addUser(String name, String pass) throws DBException {
         try {
             Session session = sessionFactory.openSession();
             Transaction transaction = session.beginTransaction();
             UsersDAO dao = new UsersDAO(session);
-            long id = dao.insertUser(name, pass);
+            dao.insertUser(name, pass);
             transaction.commit();
             session.close();
-            return id;
         } catch (HibernateException e) {
             throw new DBException(e);
         }

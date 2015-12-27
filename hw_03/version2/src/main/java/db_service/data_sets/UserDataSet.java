@@ -16,26 +16,25 @@ import java.io.Serializable;
 public class UserDataSet implements Serializable { // Serializable is must have for Hibernate
     private static final long serialVersionUID = -5706689714326132798L;
 
-    @Column(name = "id", unique = true)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
     @Id
-    @Column(name = "name", unique = true, updatable = false)
+    @Column(name = "id", unique = true)
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private long id;
+
+    @Column(name = "login", unique = true, updatable = false)
     private String name;
 
-    @Column(name = "pass", updatable = false)
+    @Column(name = "pass")
     private String pass;
 
     @SuppressWarnings("UnusedDeclaration")
     public UserDataSet() {
     }
 
-    @SuppressWarnings("UnusedDeclaration")
     public UserDataSet(String name, String pass) {
         this.name = name;
         this.pass = pass;
     }
-
 
     @SuppressWarnings("UnusedDeclaration")
     public String getName() {

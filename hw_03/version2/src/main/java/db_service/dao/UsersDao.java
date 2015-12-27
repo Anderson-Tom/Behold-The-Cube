@@ -6,11 +6,13 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
 
+import java.util.List;
+
 /**
  * @author IvanLis
  * @version 1.0
  * @since 26/12/2015.
- * <p/>
+ * <p>
  * version2
  */
 public class UsersDAO {
@@ -26,7 +28,12 @@ public class UsersDAO {
     }
 
     public UserDataSet getByName(String name) throws HibernateException {
-        return (UserDataSet) session.get(UserDataSet.class, name);
+        return (UserDataSet) session.createSQLQuery("SELECT login FROM users WHERE login ='" + name +"'").uniqueResult();
+    }
+
+
+    public List<UserDataSet> listAll() throws HibernateException {
+        return (List<UserDataSet>) session.createCriteria(UserDataSet.class).list();
     }
 
     public long getUserId(String name) throws HibernateException {
@@ -34,9 +41,9 @@ public class UsersDAO {
         return ((UserDataSet) criteria.add(Restrictions.eq("name", name)).uniqueResult()).getId();
     }
 
-    public long insertUser(String name, String pass) throws HibernateException {
-        String login = (String) session.save(new UserDataSet(name, pass));
-        long id = getUserId(login);
-        return id;
+    public void insertUser(String name, String pass) throws HibernateException {
+        session.save(new UserDataSet(name, pass));
     }
+
+
 }

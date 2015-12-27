@@ -28,15 +28,22 @@ public class SignInServlet extends HttpServlet {
 
         try {
             UserDataSet userSet = DBService.getInstance().getUserByName(login);
-            System.out.println("Pass in db:" + userSet.getPass());
-            System.out.println("Pass in the form:" + pass);
-            if (userSet.getPass().equals(pass)) {
-                resp.setStatus(HttpServletResponse.SC_OK);
-                resp.getWriter().println("Authorized");
-            } else {
+            if (userSet == null) {
+                System.out.println("This user is not exist in the system");
                 resp.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-                resp.getWriter().println("Unauthorized");
+
+            } else {
+                System.out.println("Pass in db:" + userSet.getPass());
+                System.out.println("Pass in the form:" + pass);
+                if (userSet.getPass().equals(pass)) {
+                    resp.setStatus(HttpServletResponse.SC_OK);
+                    resp.getWriter().println("Authorized");
+                } else {
+                    resp.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+                    resp.getWriter().println("Unauthorized");
+                }
             }
+
 
         } catch (DBException e) {
             e.printStackTrace();
