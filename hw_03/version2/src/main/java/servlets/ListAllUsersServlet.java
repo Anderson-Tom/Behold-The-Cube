@@ -1,5 +1,6 @@
 package servlets;
 
+import com.google.gson.Gson;
 import db_service.DBException;
 import db_service.DBService;
 import db_service.data_sets.UserDataSet;
@@ -24,7 +25,9 @@ public class ListAllUsersServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
             List<UserDataSet> users = DBService.getInstance().getAllUsers();
-            users.forEach(System.out::println);
+            Gson gson = new Gson();
+            resp.getWriter().println("Registered users:");
+            resp.getWriter().println(gson.toJson(users));
         } catch (DBException e) {
             e.printStackTrace();
         }

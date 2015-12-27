@@ -2,6 +2,7 @@ package servlets;
 
 import db_service.DBException;
 import db_service.DBService;
+import db_service.dao.UsersDAO;
 import db_service.data_sets.UserDataSet;
 
 import javax.servlet.ServletException;
