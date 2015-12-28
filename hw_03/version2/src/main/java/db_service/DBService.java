@@ -24,7 +24,7 @@ import java.util.List;
  */
 public class DBService {
     private static final String hibernate_show_sql = "true";
-    private static final String hibernate_hbm2ddl_auto = "validate";
+    private static final String hibernate_hbm2ddl_auto = "create";
     private static final String url = "jdbc:h2:./src/main/resources/db/h2db";
     private static final String dialect = "org.hibernate.dialect.H2Dialect";
     private static final String driver = "org.h2.Driver";
