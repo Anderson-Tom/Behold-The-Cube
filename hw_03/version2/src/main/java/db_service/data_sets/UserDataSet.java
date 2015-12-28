@@ -27,13 +27,25 @@ public class UserDataSet implements Serializable { // Serializable is must have 
     @Column(name = "pass")
     private String pass;
 
+    @Column(name = "email", unique = true)
+    private String email;
+
     @SuppressWarnings("UnusedDeclaration")
     public UserDataSet() {
     }
 
-    public UserDataSet(String name, String pass) {
+    public UserDataSet(String name, String pass, String email) {
         this.name = name;
         this.pass = pass;
+        this.email = email;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @SuppressWarnings("UnusedDeclaration")

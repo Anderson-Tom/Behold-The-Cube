@@ -46,8 +46,8 @@ public class UsersDAO {
         return ((UserDataSet) criteria.add(Restrictions.eq("name", name)).uniqueResult()).getId();
     }
 
-    public void insertUser(String name, String pass) throws HibernateException {
-        session.save(new UserDataSet(name, pass));
+    public void insertUser(String name, String pass, String email) throws HibernateException {
+        session.save(new UserDataSet(name, pass, email));
     }
 
 

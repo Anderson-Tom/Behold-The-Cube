@@ -19,9 +19,9 @@ import java.io.IOException;
  */
 public class SignUpServlet extends HttpServlet {
 
-    public boolean isPasswordValid(String pass1, String pass2) {
-        if (pass1 == null || pass2 == null || !pass1.equals(pass2)) {
-            System.out.println("Password does not match");
+    public boolean isIdentical(String val1, String val2) {
+        if (val1 == null || val2 == null || !val1.equals(val2)) {
+            System.out.println("Not identical");
             return false;
         }
         return true;
@@ -32,6 +32,9 @@ public class SignUpServlet extends HttpServlet {
         String login = req.getParameter("login");
         String pass1 = req.getParameter("password1");
         String pass2 = req.getParameter("password2");
+        String email1 = req.getParameter("email1");
+        String email2 = req.getParameter("email2");
+
         resp.setContentType("text/html;charset=utf-8");
 
         try {
@@ -42,12 +45,12 @@ public class SignUpServlet extends HttpServlet {
                 System.out.println("User name is already exist");
                 return;
             }
-            if (!isPasswordValid(pass1, pass2)) {
+            if (!isIdentical(pass1, pass2) || !isIdentical(email1, email2)) {
                 resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
                 resp.sendRedirect("signup.html");
                 return;
             }
-            DBService.getInstance().addUser(login, pass1);
+            DBService.getInstance().addUser(login, pass1, email1);
             resp.setStatus(HttpServletResponse.SC_OK);
             resp.getWriter().println("Successfully registered");
         } catch (DBException e) {
