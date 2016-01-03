@@ -19,7 +19,7 @@ import java.util.List;
  * @author IvanLis
  * @version 1.0
  * @since 26/12/2015.
- * <p/>
+ * <p>
  * version2
  */
 public class DBService {
@@ -106,7 +106,7 @@ public class DBService {
             List<UserDataSet> users = dao.listAll();
             session.close();
             return users;
-        } catch (HibernateException e){
+        } catch (HibernateException e) {
             throw new DBException(e);
         }
 
