@@ -22,9 +22,14 @@ public class DBService {
 
     static {
         Configuration configuration = new Configuration().configure();
-        StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder().
-                                                                    applySettings(configuration.getProperties());
-        sessionFactory = configuration.buildSessionFactory(builder.build());
+        sessionFactory = createSessionFactory(configuration);
+    }
+
+    private static SessionFactory createSessionFactory(Configuration configuration) {
+        StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder();
+        builder.applySettings(configuration.getProperties());
+        ServiceRegistry serviceRegistry = builder.build();
+        return configuration.buildSessionFactory(serviceRegistry);
     }
 
     public static SessionFactory getSessionFactory() {

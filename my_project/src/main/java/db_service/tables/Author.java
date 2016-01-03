@@ -43,6 +43,10 @@ public class Author implements Serializable {
     public Author() {
     }
 
+    public void addBook(Book book) {
+        books.add(book);
+    }
+
     public String getFirstName() {
         return firstName;
     }

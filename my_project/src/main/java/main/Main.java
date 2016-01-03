@@ -19,9 +19,16 @@ public class Main {
         AuthorDaoImpl authorDao = factory.getAuthorDao();
         bookDao.setClazz(Book.class);
         authorDao.setClazz(Author.class);
+        Author leoTolstoy = new Author("Leo", "Tolstoy", "Russia");
+        Author nikolayGogol = new Author("Nikolai", "Gogol", "Russia");
+        Book warPeace = new Book("War and Peace", "Book about war with Napoleon in Russia", 3421);
+        Book nightsInDicanka = new Book("Nights in Dikanka", "Horror", 3123);
+        leoTolstoy.addBook(warPeace);
+        nikolayGogol.addBook(nightsInDicanka);
+        authorDao.addEntity(leoTolstoy);
+        authorDao.addEntity(nikolayGogol);
 
-//        bookDao.addEntity(new Book("War and Peace", "Bestseller: book about war with Napoleon in Russia", 3421));
-//        authorDao.addEntity(new Author("Nikolai", "Gogol", "Russia"));
-//        authorDao.getEntity(1).getBooks().add(bookDao.getEntity(1));
+
+        System.out.println(bookDao.getEntities());
     }
 }

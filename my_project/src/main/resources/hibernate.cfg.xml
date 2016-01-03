@@ -20,8 +20,8 @@
         <property name="hbm2ddl.auto">create</property>
 
         <!-- List of XML mapping files-->
-        <mapping resource="author.xml"/>
-        <mapping resource="book.xml"/>
+        <mapping class="db_service.tables.Book"/>
+        <mapping class="db_service.tables.Author"/>
 
     </session-factory>
 </hibernate-configuration>
