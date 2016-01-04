@@ -29,9 +29,12 @@ public class Author implements Serializable {
     @Column(name = "country")
     private String country;
 
-    @ManyToMany (mappedBy = "authors")
-    //    @JoinTable(name = "book_authors",
-//            joinColumns = {@JoinColumn(name = "author_id")}, inverseJoinColumns = {@JoinColumn(name = "book_id")})
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(
+            name = "book_authors",
+            joinColumns = @JoinColumn(name = "author_id"),
+            inverseJoinColumns = @JoinColumn(name = "book_id")
+    )
     Set<Book> books = new HashSet<>();
 
     public Author(String firstName, String lastName, String country) {

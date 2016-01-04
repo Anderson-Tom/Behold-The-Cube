@@ -30,11 +30,10 @@ public class Book implements Serializable {
 
     @Column(name = "description")
     private String description;
-
-    @ManyToMany (cascade = {CascadeType.ALL})
-    @JoinTable(name = "book_authors",
-            joinColumns = {@JoinColumn(name = "book_id")},
-            inverseJoinColumns = {@JoinColumn(name = "author_id")})
+    @ManyToMany (mappedBy = "books")
+//    @JoinTable(name = "book_authors",
+//            joinColumns = {@JoinColumn(name = "book_id")},
+//            inverseJoinColumns = {@JoinColumn(name = "author_id")})
     Set<Author> authors;
 
     public Book() {

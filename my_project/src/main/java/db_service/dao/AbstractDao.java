@@ -61,7 +61,7 @@ public abstract class AbstractDao<T extends Serializable> {
         try {
             Session session = DBService.getSessionFactory().openSession();
             session.beginTransaction();
-            session.merge(entity);
+            session.update(entity);
             session.getTransaction().commit();
             session.close();
         } catch (Exception e) {

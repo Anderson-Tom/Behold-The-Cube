@@ -13,4 +13,5 @@ import db_service.tables.Book;
 public class BookDaoImpl extends AbstractDao<Book> {
     public BookDaoImpl() {}
 
+
 }
