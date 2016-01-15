@@ -31,9 +31,6 @@ public class Book implements Serializable {
     @Column(name = "description")
     private String description;
     @ManyToMany (mappedBy = "books")
-//    @JoinTable(name = "book_authors",
-//            joinColumns = {@JoinColumn(name = "book_id")},
-//            inverseJoinColumns = {@JoinColumn(name = "author_id")})
     Set<Author> authors;
 
     public Book() {
@@ -75,6 +72,10 @@ public class Book implements Serializable {
 
     public void setIsbn(int isbn) {
         this.isbn = isbn;
+    }
+
+    public void addAuthor(Author author) {
+        authors.add(author);
     }
 
 

@@ -28,33 +28,17 @@ public class Main {
 
         authorDao.addEntity(leoTolstoy);
         authorDao.addEntity(nikolayGogol);
-        bookDao.addEntity(warPeace);
-        bookDao.addEntity(nightsInDicanka);
+        authorDao.addBook(authorDao.getEntity(1), warPeace);
+        authorDao.addBook(authorDao.getEntity(2), nightsInDicanka);
 
 
-        Author author = authorDao.getEntity(1);
-        Author author1 = authorDao.getEntity(2);
-        Book book = bookDao.getEntity(1);
-        Book book1 = bookDao.getEntity(2);
-        authorDao.addBook(author,book);
-//        author.addBook(book);
-//        author1.addBook(book1);
+//        Author author = authorDao.getEntity(1);
+//        Author author1 = authorDao.getEntity(2);
+//        Book book = bookDao.getEntity(1);
+//        Book book1 = bookDao.getEntity(2);
+//        authorDao.addBook(author,book);
+//        authorDao.addBook(author1, book1);
 
-//        bookDao.updateEntity(book);
-//        bookDao.updateEntity(book1);
-//        authorDao.getEntity(1).addBook(bookDao.getEntity(1));
-//        authorDao.getEntity(2).addBook(bookDao.getEntity(2));
-//        leoTolstoy.addBook(warPeace);
-//        nikolayGogol.addBook(nightsInDicanka);
-//        authorDao.addEntity(nikolayGogol);
-//        authorDao.addEntity(leoTolstoy);
-
-//        Session session =  DBService.getSessionFactory().openSession();
-//        session.beginTransaction();
-//        session.save(leoTolstoy);
-//        session.save(nikolayGogol);
-//        session.getTransaction().commit();
-//        session.close();
 
         System.out.println(bookDao.getEntities());
         System.out.println("\n\n\n");
