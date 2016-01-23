@@ -1,0 +1,169 @@
+html { 
+	background: url("perspective.jpg"); 
+    -webkit-background-size:  cover;
+    -moz-background-size:  cover;
+    -o-background-size:  cover;
+    background-size: cover;
+}
+
+body {
+	min-height: 740px;
+	overflow: hidden;
+	margin: 0;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#navwrapper {
+	width: 100%;
+	height : 35px;
+	background: #222;
+	border-bottom: 2px solid #355096;
+}
+#nav {
+	width: 600px;
+	height : 100%;
+	margin: 0px;
+	margin: 0 auto 0 auto;
+}
+
+#nav li {
+	width: 25%;
+	display: inlineblock;
+	list-style-type: none;
+	padding: 8px 0;
+	float: left;
+
+}
+
+
+#nav li a{
+	color: #ccc;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+#homelink {
+	position: absolute;
+	right: 10px;
+	top: 8px;
+	//text-decoration: none;
+	font-style: oblique;
+	color: #4acaa8;
+}
+#container{
+	color: white;
+	width: 580px;
+	margin: 0 auto auto auto;
+	position: relative;
+	-webkit-perspective: 3200px;  
+	perspective: 3200px;  
+    -webkit-perspective-origin: 50% 10%;  
+    perspective-origin: 50% 10%;
+}
+
+#object {
+	width: 100%;
+	height: 480px;
+	position: absolute;
+	top: 45px;  			//we need to push this down in the container to see the top surface
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: all 2s ease-in-out;
+	transition: all 2s ease-in-out;
+}
+
+
+#surface1 {
+	width: 100%;
+	height: 100%;
+	background: #333;
+	padding: 12px;
+	box-sizing: border-box;
+	position: absolute;
+	display: block;
+	-webkit-transform:  translateZ(290px);
+	-ms-transform: translateZ(290px);
+	transform: translateZ(290px);
+}
+
+#surface2 {
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	width: 100%;
+	height: 100%;
+	background: #252525;
+	padding: 12px;
+	box-sizing: border-box;
+	position: absolute;
+	display: block;
+	-webkit-transform: rotateY(90deg) translateZ(290px);	
+	-ms-transform: rotateY(90deg)  translateZ(290px);
+	transform: rotateY(90deg) translateZ(290px);
+}
+
+
+#surface3 {
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	width: 100%;
+	height: 100%;
+	background: #333;
+	padding: 12px;
+	box-sizing: border-box;
+	position: absolute;
+	-webkit-transform: rotateY(180deg)  translateZ(290px);
+	-ms-transform: rotateY(180deg)  translateZ(290px);
+	transform: rotateY(180deg)  translateZ(290px);
+}
+
+#surface4 {
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	width: 100%;
+	height: 100%;
+	//background:DarkKhaki ;
+	background: #252525;
+	padding: 12px;
+	box-sizing: border-box;
+	position: absolute;
+	-webkit-transform:  rotateY(270deg)  translateZ(290px);
+	-ms-transform: rotateY(270deg)  translateZ(290px);
+	transform: rotateY(270deg)  translateZ(290px);
+}
+
+
+
+#shadowplane {
+	width: 580px;
+	height: 580px;
+	background-color: #000;
+	opacity: 0.85;
+	position: absolute;
+	-webkit-transform: rotateX(270deg)  translateZ(250px);
+	transform: rotateX(270deg)  translateZ(250px);
+	box-shadow: 0px 0px 30px 40px #000; 
+}
+
+#lid {
+	width: 580px;
+	height: 580px;
+	background: #444;
+	position: absolute;
+	-webkit-transform: rotateX(90deg)  translateZ(290px);
+	transform: rotateX(90deg)  translateZ(290px); 
+}
+
+//content styles
+
+p {
+	padding: 12px;
+	margin: 12px;
+}
+
+h2 {
+	font-size: 18px;
+	text-align: center;
+	padding: 8px;
+	margin: 4px;
+}
+
