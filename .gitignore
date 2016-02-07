@@ -1,0 +1,6 @@
+/web-server/*.iml
+/hw_03/version2/target
+hw_03/version2/target/*
+*.iml
+.DS_Store
+.idea

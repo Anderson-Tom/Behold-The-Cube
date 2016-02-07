@@ -1,0 +1,9 @@
+12-26 12:38:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS USER (ID BIGINT AUTO_INCREMENT, USER_NAME VARCHAR(256,[*] PRIMARY KEY (ID) "; expected "K, M, G, CHAR, )"; SQL statement:
+create table if not exists user (id bigint auto_increment, user_name varchar(256, primary key (id) [42001-187]
+12-26 12:39:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT FROM *[*] USERS WHERE ID=1 "; expected "identifier"; SQL statement:
+select from * users where id=1 [42001-187]
+12-26 12:40:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT FROM *[*] USERS WHERE ID=1 "; expected "identifier"; SQL statement:
+select from * users where id=1 [42001-187]
