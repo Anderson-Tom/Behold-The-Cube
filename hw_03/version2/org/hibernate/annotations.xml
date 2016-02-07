@@ -1,5 +1,0 @@
-<root>
-  <item name='org.hibernate.SharedSessionContract org.hibernate.Criteria createCriteria(java.lang.Class)'>
-    <annotation name='org.jetbrains.annotations.NotNull'/>
-  </item>
-</root>
